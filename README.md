@@ -1,4 +1,4 @@
-#Description of BudgetTracking APP
+# Description of BudgetTracking APP
 
 *Group members names:
 
