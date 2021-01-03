@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Budgettracker</string>
+    <string-array name="Category">
+        <item>Add category</item>
+        <item>Food</item>
+        <item>Home</item>
+        <item>Debt</item>
+        <item>Health</item>
+        <item>Other</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

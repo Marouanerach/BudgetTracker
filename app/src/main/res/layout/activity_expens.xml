@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+
+    android:id="@+id/drawer_layout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".ExpensActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-235dp">
+
+        <include layout="@layout/main_toolbar" />
+
+        <!-- <TextView
+            android:id="@+id/Address"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="-290dp"
+            android:layout_marginRight="8dp"
+            android:textStyle="italic"
+            android:text="Adress"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="#101D4B"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_marginTop="-170dp"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:layout_marginLeft="100dp"/>-->
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20dp">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/nameFIX"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="Name"
+
+                    android:textAlignment="center"
+                    android:textColor="#101D4B"
+                    android:textSize="24sp"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="Name"
+
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="italic|bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/categoryfix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="category"
+                    android:textAlignment="center"
+                    android:textColor="#101D4B"
+                    android:textSize="24sp"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/name" />
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="category"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="italic|bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/datefix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="date"
+                    android:textAlignment="center"
+                    android:textColor="#101D4B"
+                    android:textSize="24sp"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintHorizontal_bias="0.511"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/name" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="date"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="italic|bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/amountfix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="Amount"
+                    android:textAlignment="center"
+                    android:textColor="#101D4B"
+                    android:textSize="24sp"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintHorizontal_bias="0.52"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/name" />
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="Amount"
+
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="italic|bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/receipt"
+                    android:layout_width="101dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="Receipt"
+                    android:textAlignment="center"
+                    android:textColor="#101D4B"
+                    android:textSize="24sp"
+                    android:textStyle="normal|bold"
+                    app:layout_constraintHorizontal_bias="0.52"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/name" />
+
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"/>
+            </TableRow>
+
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-220dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:textAlignment="center"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal" />
+
+
+        <Button
+            android:id="@+id/Addreceipt"
+            android:layout_width="197dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/password1"
+            android:layout_gravity="center_vertical"
+           android:textAllCaps="false"
+            android:text="Add receipt"
+            android:layout_marginLeft="100dp"
+
+            android:textColor="#636363"
+            app:backgroundTint="#E1E1E1" />
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="300dp"
+        android:background="@android:color/white"
+        android:layout_gravity="start"
+        tools:ignore="MissingConstraints">
+
+        <include layout="@layout/main_nav_drawer"/>
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
